@@ -1,3 +1,4 @@
+// next.config.mjs
 const nextConfig = {
     output: 'export',
     basePath: '/baby-shower-invitation',
@@ -6,4 +7,4 @@ const nextConfig = {
     }
   };
   
-  module.exports = nextConfig;
+  export default nextConfig;
