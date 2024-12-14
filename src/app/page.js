@@ -57,7 +57,7 @@ const MainInvitation = () => (
 
     {/* Nube 1 */}
     <MovingCloud
-        src="/baby-shower-invitation/images/cloud.svg"
+        src="/images/cloud.svg"
         alt="Nube 1"
         className="w-40 h-24 top-0"
         limits={{ start: -10, end: 250 }}
@@ -66,7 +66,7 @@ const MainInvitation = () => (
 
       {/* Nube 2 */}
       <MovingCloud
-        src="/baby-shower-invitation/images/cloud2.svg"
+        src="/images/cloud2.svg"
         alt="Nube 2"
         className="w-48 h-28 top-20"
         limits={{ start: -10, end: 250 }}
@@ -74,27 +74,27 @@ const MainInvitation = () => (
       />
     {/* Nube 2 */}  
     <DraggableBackgroundImage
-      src="/baby-shower-invitation/images/giraffe.svg"
+      src="/images/giraffe.svg"
       alt="Jirafa"
       style={{ width: '300px', height: '300px' }}
       defaultPosition={{ x: 10, y: 470 }}
     />
     <DraggableBackgroundImage
-      src="/baby-shower-invitation/images/rabbit.svg"
+      src="/images/rabbit.svg"
       alt="Conejo"
       style={{ width: '300px', height: '300px' }}
       defaultPosition={{ x: 370, y: 560 }}
     />
 
     <DraggableBackgroundImage
-      src="/baby-shower-invitation/images/star1.svg"
+      src="/images/star1.svg"
       alt="Star_1"
       style={{ width: '200px', height: '200px' }}
       defaultPosition={{ x: 40, y: 130 }}
     />
 
     <DraggableBackgroundImage
-      src="/baby-shower-invitation/images/star2.svg"
+      src="/images/star2.svg"
       alt="Star_1"
       style={{ width: '200px', height: '200px' }}
           defaultPosition={{ x: 400, y: 230 }}
