@@ -19,3 +19,77 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: 'JustBubble';
+  src: url('/baby-shower-invitation/fonts/JustBubble.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Segunda fuente: Girl */
+@font-face {
+  font-family: 'Girl';
+  src: url('/baby-shower-invitation/fonts/Girl.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Segunda fuente: Girl 1 */
+@font-face {
+  font-family: 'Girl1';
+  src: url('/baby-shower-invitation/fonts/BabyGirlMonolineRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Segunda fuente: Girl 2 */
+@font-face {
+  font-family: 'Girl2';
+  src: url('/baby-shower-invitation/fonts/GirlRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Segunda fuente: Girl 2 */
+@font-face {
+  font-family: 'Bubble_Bash';
+  src: url('/baby-shower-invitation/fonts/BubbleBash.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kidsbee';
+  src: url('/baby-shower-invitation/fonts/Babydoll.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes bounce-twice {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-20px) rotate(5deg); }
+  50% { transform: translateY(0) rotate(0deg); }
+  75% { transform: translateY(-10px) rotate(-5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.animate-bounce-twice {
+  animation: bounce-twice 1s ease-in-out;
+}
+
+@keyframes cloud-move {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-cloud-move {
+  animation: cloud-move linear infinite; /* Repite el movimiento */
+}
