@@ -57,7 +57,7 @@ const MainInvitation = () => (
       src="/images/stork.svg"
       alt="stork"
       style={{ width: '300px', height: '300px' }}
-      defaultPosition={{ x: 70, y: 200 }}
+      defaultPosition={{ x: 70, y: 160 }}
     />
 
     {/* Nube 1 */}
@@ -95,20 +95,20 @@ const MainInvitation = () => (
       src="/images/star1.svg"
       alt="Star_1"
       style={{ width: '200px', height: '200px' }}
-      defaultPosition={{ x: 40, y: 130 }}
+      defaultPosition={{ x: 20, y: 110 }}
     />
 
     <DraggableBackgroundImage
       src="/images/star2.svg"
       alt="Star_1"
       style={{ width: '200px', height: '200px' }}
-          defaultPosition={{ x: 400, y: 230 }}
+          defaultPosition={{ x: 400, y: 210 }}
     />
 
 
-    <div className="text-8xl font-bubble text-rose-500" translate="no">
+    <div className="text-8xl font-bubble text-rose-500 leading-none">
       BABY
-      <div className="text-9xl  font-bubble text-rose-400">
+      <div className="text-9xl font-bubble text-rose-400 -mt-10">
         shower
       </div>
     </div>
