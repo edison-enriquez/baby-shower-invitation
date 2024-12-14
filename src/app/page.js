@@ -101,7 +101,7 @@ const MainInvitation = () => (
     />
 
 
-    <div className="text-8xl font-bubble text-rose-500">
+    <div className="text-8xl font-bubble text-rose-500" translate="no">
       BABY
       <div className="text-9xl  font-bubble text-rose-400">
         shower
