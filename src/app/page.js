@@ -55,8 +55,8 @@ const MainInvitation = () => (
     </div>
 
     <div className="mt-4 text-lg text-amber-900">
-      TE INVITAMOS A CELEBRAR
-      <div className="mt-2">LA LLEGADA DE NUESTRA PRINCESA</div>
+      Te invitamos a Celebrar
+      <div className="mt-2">La llegada de nuestra princesa</div>
     </div>
 
     <BalloonName name="SALOMÉ" />
@@ -72,8 +72,8 @@ const MainInvitation = () => (
     </div>
 
     <div className="mt-6 text-lg text-amber-900">
-      <div>SALÓN DE EVENTOS "EL JARDÍN"</div>
-      <div>Av. Principal 123, Ciudad Jardín</div>
+      <div>Casa Familiar E10 - Casa 22 "Guadual Del Eden"</div>
+      <div>Calle 9 # 39 Sur 67, Jamundí</div>
     </div>
 
     <div className="mt-6">
