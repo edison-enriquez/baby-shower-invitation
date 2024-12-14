@@ -80,8 +80,8 @@ const MainInvitation = () => (
       defaultPosition={{ x: 10, y: 470 }}
     />
     <DraggableBackgroundImage
-      src="/images/rabbit.svg"
-      alt="Conejo"
+      src="/images/babyGoat.svg"
+      alt="Ovejita"
       style={{ width: '300px', height: '300px' }}
       defaultPosition={{ x: 370, y: 560 }}
     />
