@@ -52,7 +52,7 @@ const BalloonName = ({ name }) => (
 );
 
 const MainInvitation = () => (
-  <div className="bg-white/90 backdrop-blur-sm p-8 text-center space-y-6 shadow-xl rounded-lg max-w-lg mx-auto">
+  <div className="bg-pink-100 backdrop-blur-sm p-8 text-center space-y-6 shadow-xl rounded-lg max-w-lg mx-auto">
     {/* Jirafa draggable */}
 
     {/* Nube 1 */}
@@ -82,7 +82,7 @@ const MainInvitation = () => (
     <DraggableBackgroundImage
       src="/images/babyGoat.svg"
       alt="Ovejita"
-      style={{ width: '300px', height: '300px' }}
+      style={{ width: '400px', height: '400px' }}
       defaultPosition={{ x: 370, y: 560 }}
     />
 
