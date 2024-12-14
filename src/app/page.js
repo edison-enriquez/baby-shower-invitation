@@ -85,10 +85,10 @@ const MainInvitation = () => (
       defaultPosition={{ x: 10, y: 470 }}
     />
     <DraggableBackgroundImage
-      src="/images/babyGoat.svg"
-      alt="Ovejita"
+      src="/images/babyCat.svg"
+      alt="babyCat"
       style={{ width: '400px', height: '400px' }}
-      defaultPosition={{ x: 370, y: 560 }}
+      defaultPosition={{ x: 370, y: 480 }}
     />
 
     <DraggableBackgroundImage
@@ -113,9 +113,12 @@ const MainInvitation = () => (
       </div>
     </div>
 
-    <div className="text-2xl font-girl text-rose-500">
+    <div className="text-2xl font-girl text-rose-500" style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}>
+
     e invitamos a Celebra
-      <div className="mt-2 font-girl1 text-rose-500">L&#xf038;llegad&#xf038;d&#xf03c;nuestr&#xf038;princesa</div>
+      <div className="mt-2 font-girl1 text-rose-500"
+              style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}
+      >L&#xf038;llegad&#xf038;d&#xf03c;nuestr&#xf038;princesa</div>
     </div>
 
     <BalloonName name="SALOMÉ" />
@@ -131,6 +134,7 @@ const MainInvitation = () => (
     </div>
 
     <div className="mt-6 text-lg text-amber-900 font-girl2">
+      
       <div>Calle 9 # 39 Sur 67, Jamundí</div>
     </div>
 
