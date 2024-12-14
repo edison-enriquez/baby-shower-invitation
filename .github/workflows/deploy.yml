@@ -4,18 +4,35 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      # Paso 1: Clona el repositorio
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Paso 2: Configura Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
           node-version: '18'
-      - run: npm ci
-      - run: npm run build
-      - name: Deploy
+
+      # Paso 3: Instala las dependencias
+      - name: Install Dependencies
+        run: npm ci
+
+      # Paso 4: Construye el proyecto
+      - name: Build Project
+        run: npm run build && npm run export
+
+      # Paso 5: Despliega en GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./out # Directorio de salida generado por `next export`
+          publish_branch: gh-pages # Rama donde se despliega GitHub Pages
