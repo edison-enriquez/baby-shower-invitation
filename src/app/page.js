@@ -53,7 +53,12 @@ const BalloonName = ({ name }) => (
 
 const MainInvitation = () => (
   <div className="bg-pink-100 backdrop-blur-sm p-8 text-center space-y-6 shadow-xl rounded-lg max-w-lg mx-auto">
-    {/* Jirafa draggable */}
+    <DraggableBackgroundImage
+      src="/images/stork.svg"
+      alt="stork"
+      style={{ width: '300px', height: '300px' }}
+      defaultPosition={{ x: 70, y: 200 }}
+    />
 
     {/* Nube 1 */}
     <MovingCloud
