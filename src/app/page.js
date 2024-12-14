@@ -108,12 +108,12 @@ const MainInvitation = () => (
 
     <div className="text-8xl font-bubble text-rose-500 leading-none">
       BABY
-      <div className="text-9xl font-bubble text-rose-400 -mt-14">
+      <div className="text-9xl font-bubble text-rose-400 -mt-10">
         shower
       </div>
     </div>
 
-    <div className="text-2xl font-girl text-rose-500 pt-10" style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}>
+    <div className="text-2xl font-girl text-rose-500 pt-14" style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}>
 
     e invitamos a Celebra
       <div className="mt-2 font-girl1 text-rose-500"
