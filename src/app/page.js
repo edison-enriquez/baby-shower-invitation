@@ -4,8 +4,6 @@ import React, { useState } from 'react';
 import DraggableBackgroundImage from '@/components/ui/DraggableBackgroundImage';
 import MovingCloud from '@/components/ui/MovingCloud';
 
-
-
 const BalloonLetter = ({ letter, delay = 0 }) => (
   <div
     className="inline-block relative animate-float"
@@ -14,7 +12,7 @@ const BalloonLetter = ({ letter, delay = 0 }) => (
       filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))',
     }}
   >
-    <svg viewBox="0 0 100 140" className="w-12 h-16 md:w-16 md:h-20">
+    <svg viewBox="0 0 100 140" className="w-[11vw] h-[15vw] sm:w-12 sm:h-16 md:w-16 md:h-20">
       <path
         d="M50,100 Q90,100 90,50 Q90,10 50,10 Q10,10 10,50 Q10,100 50,100 Z"
         fill="#FFB6C1"
@@ -42,9 +40,8 @@ const BalloonLetter = ({ letter, delay = 0 }) => (
   </div>
 );
 
-
 const BalloonName = ({ name }) => (
-  <div className="flex justify-center items-center space-x-2 my-8">
+  <div className="flex justify-center items-center space-x-2 sm:space-x-2 my-4 sm:my-8 scale-110 sm:scale-100">
     {name.split('').map((letter, index) => (
       <BalloonLetter key={index} letter={letter} delay={index * 0.2} />
     ))}
@@ -52,94 +49,97 @@ const BalloonName = ({ name }) => (
 );
 
 const MainInvitation = () => (
-  <div className="bg-pink-100 backdrop-blur-sm p-8 text-center space-y-6 shadow-xl rounded-lg max-w-lg mx-auto">
+  <div className="bg-pink-100 backdrop-blur-sm p-3 sm:p-4 text-center shadow-xl rounded-lg w-[95vw] sm:w-full max-w-lg mx-auto relative h-[85vh] sm:h-[90vh]">
+    {/* Cigüeña */}
     <DraggableBackgroundImage
       src="/images/stork.svg"
       alt="stork"
-      style={{ width: '300px', height: '300px' }}
-      defaultPosition={{ x: 70, y: 160 }}
+      style={{ 
+        width: 'clamp(60px, 12vh, 180px)', 
+        height: 'clamp(60px, 12vh, 180px)' 
+      }}
+      className="absolute top-[-2vh] right-[2vh] sm:right-auto sm:left-[5vh] sm:top-[4vh]"
     />
 
-    {/* Nube 1 */}
+    {/* Nubes */}
     <MovingCloud
-        src="/images/cloud.svg"
-        alt="Nube 1"
-        className="w-40 h-24 top-0"
-        limits={{ start: -10, end: 250 }}
-        speed={0.09}
-      />
-
-      {/* Nube 2 */}
-      <MovingCloud
-        src="/images/cloud2.svg"
-        alt="Nube 2"
-        className="w-48 h-28 top-20"
-        limits={{ start: -10, end: 250 }}
-        speed={0.2}
-      />
-    {/* Nube 2 */}  
-    <DraggableBackgroundImage
-      src="/images/giraffe.svg"
-      alt="Jirafa"
-      style={{ width: '300px', height: '300px' }}
-      defaultPosition={{ x: 10, y: 470 }}
-    />
-    <DraggableBackgroundImage
-      src="/images/babyCat.svg"
-      alt="babyCat"
-      style={{ width: '400px', height: '400px' }}
-      defaultPosition={{ x: 370, y: 480 }}
+      src="/images/cloud.svg"
+      alt="Nube 1"
+      className="w-[12vh] h-[6vh] sm:w-[15vh] sm:h-[8vh] top-[20vh]"
+      limits={{ start: -10, end: 250 }}
+      speed={0.09}
     />
 
-    <DraggableBackgroundImage
-      src="/images/star1.svg"
-      alt="Star_1"
-      style={{ width: '200px', height: '200px' }}
-      defaultPosition={{ x: 20, y: 110 }}
-    />
-
-    <DraggableBackgroundImage
-      src="/images/star2.svg"
-      alt="Star_1"
-      style={{ width: '200px', height: '200px' }}
-          defaultPosition={{ x: 400, y: 210 }}
+    <MovingCloud
+      src="/images/cloud2.svg"
+      alt="Nube 2"
+      className="w-[14vh] h-[7vh] sm:w-[18vh] sm:h-[10vh] top-[26vh]"
+      limits={{ start: -10, end: 250 }}
+      speed={0.2}
     />
 
 
-    <div className="text-8xl font-bubble text-rose-500 leading-none">
-      BABY
-      <div className="text-9xl font-bubble text-rose-400 -mt-10">
-        shower
+    {/* Contenido principal */}
+    <div className="relative pt-[12vh] sm:pt-[12vh]">
+      <div className="text-[8vh] sm:text-[10vh] font-bubble text-rose-500 leading-none">
+        BABY
+        <div className="text-[8vh] sm:text-[10vh] font-bubble text-rose-400 -mt-[1vh]">
+          SHOWER
+        </div>
+      </div>
+
+      <div className="text-[2.5vh] sm:text-[3vh] font-girl text-rose-500 pt-[2vh]" 
+          style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}>
+        e invitamos a Celebra
+        <div className="mt-[0.5vh] font-girl1 text-rose-500"
+            style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}>
+          L&#xf038;llegad&#xf038;d&#xf03c;nuestr&#xf038;princesa
+        </div>
+      </div>
+
+      <BalloonName name="SALOMÉ" />
+
+      <div className="mt-[1vh] space-y-[0.5vh] text-amber-900">
+        <div>
+          <span className="text-[3vh] sm:text-[4vh] font-girl1">Sábado</span>
+          <span className="mx-[1vh] text-[3vh] sm:text-[4vh] font-girl1">11</span>
+          <span className="text-[3vh] sm:text-[4vh] font-girl1">Enero</span>
+        </div>
+        <div className="text-[2.5vh] sm:text-[3vh] font-girl1">2025</div>
+        <div className="text-[2.5vh] sm:text-[3vh] mt-[1vh] font-girl1">3:00 PM</div>
+      </div>
+
+      <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
+        <div>Calle 9 # 39 Sur 67, Jamundí</div>
       </div>
     </div>
 
-    <div className="text-2xl font-girl text-rose-500 pt-14" style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}>
+    {/* Grupo del botón con animales */}
+    <div className="absolute bottom-0 left-0 right-0 h-[22vh] sm:h-[30vh]">
+      {/* Jirafa */}
+      <DraggableBackgroundImage
+        src="/images/giraffe.svg"
+        alt="Jirafa"
+        style={{ 
+          width: 'clamp(100px, 18vh, 250px)', 
+          height: 'clamp(100px, 18vh, 250px)' 
+        }}
+        className="absolute bottom-[1vh] left-[-3vh] sm:left-[8vh]"
+      />
 
-    e invitamos a Celebra
-      <div className="mt-2 font-girl1 text-rose-500"
-              style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}
-      >L&#xf038;llegad&#xf038;d&#xf03c;nuestr&#xf038;princesa</div>
-    </div>
+      {/* Gato */}
+      <DraggableBackgroundImage
+        src="/images/babyCat.svg"
+        alt="babyCat"
+        style={{ 
+          width: 'clamp(120px, 20vh, 280px)', 
+          height: 'clamp(120px, 20vh, 280px)' 
+        }}
+        className="absolute bottom-[4vh] right-[-40vh] sm:right-[-40vh]"
+      />
 
-    <BalloonName name="SALOMÉ" />
-
-    <div className="mt-4 space-y-2 text-amber-900">
-      <div className="text-xl">
-        <span className="text-4xl font-girl1">Sábado</span>
-        <span className="mx-4 text-4xl font-girl1">11</span>
-        <span className="text-4xl font-girl1">Enero</span>
-      </div>
-      <div className="text-xl font-girl1">2025</div>
-      <div className="text-xl mt-4 font-girl1">3:00 PM</div>
-    </div>
-
-    <div className="mt-6 text-lg text-amber-900 font-girl2">
-      
-      <div>Calle 9 # 39 Sur 67, Jamundí</div>
-    </div>
-
-    <div className="mt-6">
-      <button className="bg-rose-400 hover:bg-rose-500 text-white px-6 py-2 rounded-lg text-lg font-girl">
+      {/* Botón */}
+      <button className="absolute bottom-[2vh] left-1/2 -translate-x-1/2 bg-rose-400 hover:bg-rose-500 text-white px-[2vh] sm:px-[3vh] py-[1vh] rounded-lg text-[2vh] sm:text-[2.5vh] font-girl">
         Confirmar Asistencia
       </button>
     </div>
@@ -148,12 +148,11 @@ const MainInvitation = () => (
 
 const BabyShowerInvitation = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-pink-50 p-8 flex items-center justify-center">
+    <div className="h-screen bg-gradient-to-b from-white to-pink-50 p-2 flex items-center justify-center overflow-hidden">
       <MainInvitation />
       <style jsx global>{`
         @keyframes float {
-          0%,
-          100% {
+          0%, 100% {
             transform: translateY(0px);
           }
           50% {
