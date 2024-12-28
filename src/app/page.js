@@ -102,15 +102,15 @@ const MainInvitation = () => (
       <div className="mt-[1vh] space-y-[0.5vh] text-amber-900">
         <div>
           <span className="text-[3vh] sm:text-[4vh] font-girl1">Sábado</span>
-          <span className="mx-[1vh] text-[3vh] sm:text-[4vh] font-girl1">11</span>
+          <span className="mx-[1vh] text-[3vh] sm:text-[4vh] font-girl1">4</span>
           <span className="text-[3vh] sm:text-[4vh] font-girl1">Enero</span>
         </div>
         <div className="text-[2.5vh] sm:text-[3vh] font-girl1">2025</div>
-        <div className="text-[2.5vh] sm:text-[3vh] mt-[1vh] font-girl1">3:00 PM</div>
+        <div className="text-[2.5vh] sm:text-[3vh] mt-[1vh] font-girl1">5:00 PM</div>
       </div>
 
       <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
-        <div>Calle 9 # 39 Sur 67, Jamundí</div>
+        <div>Calle 4 # 1 - 27 Barrio San Jose, Gualmatán</div>
       </div>
     </div>
 
