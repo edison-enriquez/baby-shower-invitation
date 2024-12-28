@@ -110,7 +110,7 @@ const MainInvitation = () => (
       </div>
 
       <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
-        <div>Calle 4 # 1 - 27 Barrio San Jose, Gualmatán</div>
+        <div>Calle 4 # 1 - 27 </BR> Barrio San Jose, Gualmatán</div>
       </div>
     </div>
 
@@ -135,12 +135,12 @@ const MainInvitation = () => (
           width: 'clamp(120px, 20vh, 280px)', 
           height: 'clamp(120px, 20vh, 280px)' 
         }}
-        className="absolute bottom-[4vh] right-[-40vh] sm:right-[-40vh]"
+        className="absolute bottom-[4vh] right-[-40vh] sm:right-[-30vh]"
       />
 
       {/* Botón */}
-      <button className="absolute bottom-[2vh] left-1/2 -translate-x-1/2 bg-rose-400 hover:bg-rose-500 text-white px-[2vh] sm:px-[3vh] py-[1vh] rounded-lg text-[2vh] sm:text-[2.5vh] font-girl">
-        Confirmar Asistencia
+      <button className="absolute bottom-[2vh] left-1/2 -translate-x-1/2 bg-rose-400 hover:bg-rose-500 text-white px-[2vh] sm:px-[3vh] py-[1vh] rounded-lg text-[2vh] sm:text-[2.5vh] font-girl"> Gracias por su
+        Asistencia
       </button>
     </div>
   </div>
