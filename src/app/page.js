@@ -106,16 +106,16 @@ const MainInvitation = () => (
           <span className="text-[3vh] sm:text-[4vh] font-girl1">Enero</span>
         </div>
         <div className="text-[2.5vh] sm:text-[3vh] font-girl1">2025</div>
-        <div className="text-[2.5vh] sm:text-[3vh] mt-[1vh] font-girl1">5:00 PM</div>
+        <div className="text-[2.5vh] sm:text-[3vh] mt-[1vh] font-girl1"> 5:00 PM</div>
       </div>
 
       <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
-        <div>Calle 4 # 1 - 27 <br /> Barrio San Jose, Gualmatán</div>
+        <div>Calle 4 # 1 - 27 <br /> Barrio San Jose,<br /> Gualmatán</div>
       </div>
     </div>
 
     {/* Grupo del botón con animales */}
-    <div className="absolute bottom-0 left-0 right-0 h-[22vh] sm:h-[30vh]">
+    <div className="absolute bottom-10 left-0 right-0 h-[22vh] sm:h-[30vh]">
       {/* Jirafa */}
       <DraggableBackgroundImage
         src="/images/giraffe.svg"
@@ -124,7 +124,7 @@ const MainInvitation = () => (
           width: 'clamp(100px, 18vh, 250px)', 
           height: 'clamp(100px, 18vh, 250px)' 
         }}
-        className="absolute bottom-[1vh] left-[-3vh] sm:left-[8vh]"
+        className="absolute bottom-[0vh] left-[-3vh] sm:left-[8vh]"
       />
 
       {/* Gato */}
@@ -135,7 +135,7 @@ const MainInvitation = () => (
           width: 'clamp(120px, 20vh, 280px)', 
           height: 'clamp(120px, 20vh, 280px)' 
         }}
-        className="absolute bottom-[4vh] right-[-40vh] sm:right-[-30vh]"
+        className="absolute bottom-[4vh] right-[-35vh] sm:right-[-40vh]"
       />
 
       {/* Botón */}
