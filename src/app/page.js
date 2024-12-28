@@ -139,9 +139,9 @@ const MainInvitation = () => (
       />
 
       {/* Botón */}
-      <button className="absolute bottom-[2vh] left-1/2 -translate-x-1/2 bg-rose-400 hover:bg-rose-500 text-white px-[2vh] sm:px-[3vh] py-[1vh] rounded-lg text-[2vh] sm:text-[2.5vh] font-girl"> Gracias por su
+      {/**<button className="absolute bottom-[2vh] left-1/2 -translate-x-1/2 bg-rose-400 hover:bg-rose-500 text-white px-[2vh] sm:px-[3vh] py-[1vh] rounded-lg text-[2vh] sm:text-[2.5vh] font-girl"> Gracias por su
         Asistencia
-      </button>
+      </button>*/}
     </div>
   </div>
 );
