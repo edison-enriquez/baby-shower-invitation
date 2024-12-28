@@ -110,7 +110,7 @@ const MainInvitation = () => (
       </div>
 
       <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
-        <div>Calle 4 # 1 - 27 </BR> Barrio San Jose, Gualmatán</div>
+        <div>Calle 4 # 1 - 27 <br /> Barrio San Jose, Gualmatán</div>
       </div>
     </div>
 
