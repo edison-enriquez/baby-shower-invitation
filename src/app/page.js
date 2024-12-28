@@ -106,11 +106,11 @@ const MainInvitation = () => (
           <span className="text-[3vh] sm:text-[4vh] font-girl1">Enero</span>
         </div>
         <div className="text-[2.5vh] sm:text-[3vh] font-girl1">2025</div>
-        <div className="text-[2.5vh] sm:text-[3vh] mt-[1vh] font-girl1"> 5:00 PM</div>
+        <div className="text-[2.5vh] sm:text-[3vh] mt-[1vh] font-girl1"> 5:00 PM <br /></div>
       </div>
 
       <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
-        <div>SANTA EUCARISTÍA <br />Calle 4 # 1 - 27 <br /> Barrio San Jose,<br /> Gualmatán</div>
+        <div>Santa Eucaristía<br />Calle 4 # 1 - 27 <br /> Barrio San Jose,<br /> Gualmatán</div>
       </div>
     </div>
 
