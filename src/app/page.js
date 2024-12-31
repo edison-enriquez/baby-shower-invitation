@@ -104,7 +104,7 @@ const MainInvitation = () => (
 
       <div className="text-[3.5vh] sm:text-[3vh] font-girl1 text-rose-900 pt-[4vh]" 
           style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}>
-        Yul&#xf016;&#xf035;Edison
+        Yul&#xf040;&#xf050;Edison
       </div>
       <div className="text-[2.5vh] sm:text-[3vh] font-girl text-rose-500 pt-[2vh]" 
           style={{ textShadow: "2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white, 0px 2px 0px white, 0px -2px 0px white, 2px 0px 0px white, -2px 0px 0px white" }}>
