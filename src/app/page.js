@@ -1,8 +1,24 @@
+Untitled
+
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { initializeApp } from 'firebase/app';
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import DraggableBackgroundImage from '@/components/ui/DraggableBackgroundImage';
 import MovingCloud from '@/components/ui/MovingCloud';
+
+// Firebase configuration
+const firebaseConfig = {
+  // Tu configuración de Firebase aquí
+  apiKey: "tu-api-key",
+  authDomain: "tu-auth-domain",
+  projectId: "tu-project-id",
+  storageBucket: "tu-storage-bucket",
+  messagingSenderId: "tu-messaging-sender-id",
+  appId: "tu-app-id"
+};
 
 const BalloonLetter = ({ letter, delay = 0 }) => (
   <div
