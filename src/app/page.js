@@ -124,6 +124,7 @@ const MainInvitation = () => (
           <span className="text-[3vh] sm:text-[4vh] font-girl1">Enero</span>
         </div>
         {/*<div className="text-[2.5vh] sm:text-[3vh] font-girl1">2025</div*/}
+        
         <div className="text-[2.5vh] sm:text-[3vh] mt-[1vh] font-girl1"> 5:00 PM <br /></div>
       </div>
 
