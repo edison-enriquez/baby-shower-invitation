@@ -1,5 +1,3 @@
-Untitled
-
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -130,7 +128,8 @@ const MainInvitation = () => (
       </div>
 
       <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
-        <div>Santa Eucaristía<br />Calle 4 # 1 - 27 <br /> Barrio San Jose,<br /> Gualmatán</div>
+        <div className="text-[3vh] sm:text-[3.5vh] font-bold">Santa Eucaristía</div>
+        <div>Calle 4 # 1 - 27 <br /> Barrio San Jose,<br /> Gualmatán</div>
       </div>
     </div>
 
