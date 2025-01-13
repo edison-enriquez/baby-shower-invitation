@@ -120,8 +120,8 @@ const MainInvitation = () => (
       <div className="mt-[1vh] space-y-[0.5vh] text-amber-900">
         <div>
           <span className="text-[3vh] sm:text-[4vh] font-girl1">Sábado</span>
-          <span className="mx-[1vh] text-[3vh] sm:text-[4vh] font-girl1">4</span>
-          <span className="text-[3vh] sm:text-[4vh] font-girl1">Enero</span>
+          <span className="mx-[1vh] text-[3vh] sm:text-[4vh] font-girl1">2</span>
+          <span className="text-[3vh] sm:text-[4vh] font-girl1">Febrero</span>
         </div>
         {/*<div className="text-[2.5vh] sm:text-[3vh] font-girl1">2025</div*/}
 
@@ -130,7 +130,7 @@ const MainInvitation = () => (
 
       <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
         <div className="text-[3vh] sm:text-[3.5vh] font-bold">Santa Eucaristía</div>
-        <div>Calle 4 # 1 - 27 <br /> Barrio San Jose,<br /> Gualmatán</div>
+        <div>Calle 9 # 39 Sur - 67 <br /> Guadual del Eden,<br /> Jamundí</div>
       </div>
     </div>
 
