@@ -120,7 +120,7 @@ const MainInvitation = () => (
       <div className="mt-[1vh] space-y-[0.5vh] text-amber-900">
         <div>
           <span className="text-[3vh] sm:text-[4vh] font-girl1">Sábado</span>
-          <span className="mx-[1vh] text-[3vh] sm:text-[4vh] font-girl1">2</span>
+          <span className="mx-[1vh] text-[3vh] sm:text-[4vh] font-girl1">1</span>
           <span className="text-[3vh] sm:text-[4vh] font-girl1">Febrero</span>
         </div>
         {/*<div className="text-[2.5vh] sm:text-[3vh] font-girl1">2025</div*/}
