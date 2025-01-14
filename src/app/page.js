@@ -129,7 +129,7 @@ const MainInvitation = () => (
       </div>
 
       <div className="mt-[1vh] text-[2vh] sm:text-[2.5vh] text-amber-900 font-girl2">
-        <div className="text-[3vh] sm:text-[3.5vh] font-bold">Santa Eucaristía</div>
+          {/*<div className="text-[3vh] sm:text-[3.5vh] font-bold">Santa Eucaristía</div>*/}
         <div>Calle 9 # 39 Sur - 67 <br /> Guadual del Eden,<br /> Jamundí</div>
       </div>
     </div>
